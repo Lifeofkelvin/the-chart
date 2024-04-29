@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Expenses chart component</title>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="top-bar">
+      <div class="balance">
+        <p class="my-view">My balance</p>
+        <h2>$921.48</h2>
+      </div>
+      <div class="logo">
+        <img src="/images/logo.svg">
+      </div>
+    </div>
+
+
+    <!-- chart content -->
+    <div class="wrapper">
+      <h1>Spending - Last 7 days</h1>
+      <canvas id="myChart"></canvas>
+      <div class="divider"></div>
+      <div class="totals">
+        <div class="this_month">
+          <p>Total this month</p>
+          <h2>$478.33</h2>
+        </div>
+        <div class="last_month">
+          <p>+2.4%</p>
+          <p>from last month</p>
+        </div>
+      </div>
+    </div>
+        
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

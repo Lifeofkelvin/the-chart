@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Cream);
+    flex-direction: column;
+}
+.container {
+    background: var(--Cream);
+    width: 450px;
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--Soft-red);
+    padding: 1rem;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.balance {
+    display: flex;
+    flex-direction: column;
+}
+.balance p {
+    font-weight: 400;
+}
+.balance h2 {
+    font-weight: 900;
+    font-size: 30px;
+}
+.my-view {
+    margin-bottom: 5px;
+}
+.logo {
+    margin-right: 10px;
+}
+.wrapper {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.wrapper h1 {
+    color: var(--Dark-brown);
+}
+#myChart {
+    margin: 2rem 0;
+}
+.divider {
+    background: var(--Cream);
+    width: 100%;
+    height: 3px;
+    margin-bottom: 1rem;
+}
+.totals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.this_month p{
+    color: var(--Medium-brown);
+}
+.this_month h2{
+    color: var(--Dark-brown);
+}
+.last_month p {
+    font-weight: 400;
+    color: var(--Dark-brown);
+}
+.last_month h2 {
+    color: var(--Medium-brown);
+}
+.last_month p:last-child{
+    color: var(--Medium-brown);
+}
